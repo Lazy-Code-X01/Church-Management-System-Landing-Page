@@ -1,0 +1,48 @@
+
+// media query for desktop
+@media screen and (max-width: 1280px) {
+    .nav{
+        // background-color: black;
+    }
+}
+
+// for ipads potrait mode 
+@media screen and (max-width: 1024px) {
+    .nav{
+        // background-color: brown;
+
+        .sub-nav{
+            .nav__content{
+                .nav__menu{
+                    ul{
+                        padding: 10px;
+                        li{
+                            padding: 2px 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .sub-nav{
+
+            .nav__buttons{
+                button{
+                    width: 130px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }    
+}
+
+ //low resolution tabelets and ipads
+@media screen and (max-width: 768px) {
+    .nav{
+        // background-color: blue;
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
+}
