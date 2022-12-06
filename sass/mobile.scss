@@ -10,7 +10,6 @@
 @media screen and (max-width: 1024px) {
     .nav{
         // background-color: brown;
-
         .sub-nav{
             .nav__content{
                 .nav__menu{
@@ -33,6 +32,31 @@
             }
         }
     }    
+
+    // home section
+    .home-banner-container {
+        .sub-home-banner-container{
+            .banner-img{
+                width: 500px;
+            }
+            .banner-text{
+                width: 50%;
+                margin-left: 3em;
+                .mll1{
+                    font-size: 30px;
+                    line-height: 1.5;
+                }
+                .m110{
+                    font-size: 18px;
+                }
+                .btn-holder{
+                    button{
+                        width: 130px;
+                    }
+                }
+            }
+        }
+    }
 }
 
  //low resolution tabelets and ipads
@@ -41,8 +65,31 @@
         // background-color: blue;
         display: none;
     }
-
     .mobile{
         display: flex;
+    }
+
+    // home section
+    .home-banner-container{
+        .sub-home-banner-container{
+            .banner-img{
+                display: none;
+            }
+
+            .banner-text{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .mll1{
+                    font-size: 25px;
+                }
+
+                .ml10{
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }

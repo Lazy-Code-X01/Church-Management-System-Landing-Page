@@ -16,7 +16,10 @@
     
     <!--for mobile navigations-->
     <link rel="stylesheet" href="./css/mobile.css">
-
+    <!--linking anime js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
@@ -67,7 +70,6 @@
 </div>
 <!--mobile navigation ends here-->
 
-
 <div class="nav">
     <div class="nav__logo">
       <p class="logo">CaaS</p>
@@ -102,8 +104,44 @@
     </div>  
 </div>
 
-  <script src="./js/index.js"></script>
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- first sectio banner Home Page -->
+<section class="home-banner-container scroll-reveal">
+  <div class="sub-home-banner-container">
+    <div class="banner-img"></div>
+    <div class="banner-text">
+
+      <div class="sub-banner-text-holder">
+
+        <!--small annimated text using anime js cdn-->
+        <small class="ml10">
+          <span class="text-wrapper">
+            <!--rememver to put S back and dont knock urself out-->
+            <span class="letters">You don't have to loose one</span>
+          </span>
+        </small>
+        <!-- end of small animated text using anime js cdn-->
+        <h1 class="mll1">
+          unlock the  <br>
+          possibilities of <br>
+          tracking every member <br>
+          wellbeing 
+        </h1>
+        <div class="btn-holder">
+          <button class="btn">
+            <a href="#">
+              get started
+            </a>  
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="./js/index.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>

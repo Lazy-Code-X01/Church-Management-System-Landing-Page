@@ -9,6 +9,23 @@
     width: 130px;
     margin-left: 20px;
   }
+  .home-banner-container .sub-home-banner-container .banner-img {
+    width: 500px;
+  }
+  .home-banner-container .sub-home-banner-container .banner-text {
+    width: 50%;
+    margin-left: 3em;
+  }
+  .home-banner-container .sub-home-banner-container .banner-text .mll1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .home-banner-container .sub-home-banner-container .banner-text .m110 {
+    font-size: 18px;
+  }
+  .home-banner-container .sub-home-banner-container .banner-text .btn-holder button {
+    width: 130px;
+  }
 }
 @media screen and (max-width: 768px) {
   .nav {
@@ -16,5 +33,20 @@
   }
   .mobile {
     display: flex;
+  }
+  .home-banner-container .sub-home-banner-container .banner-img {
+    display: none;
+  }
+  .home-banner-container .sub-home-banner-container .banner-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-banner-container .sub-home-banner-container .banner-text .mll1 {
+    font-size: 25px;
+  }
+  .home-banner-container .sub-home-banner-container .banner-text .ml10 {
+    font-size: 18px;
   }
 }

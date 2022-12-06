@@ -42,8 +42,8 @@ body {
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
+  width: 30px;
+  height: 3px;
   background-color: #FAFA33;
   z-index: 99999;
   border-radius: 4px;
@@ -103,6 +103,7 @@ body {
   position: fixed;
   display: flex;
   transition: 0.5s ease;
+  z-index: 99;
 }
 .nav .nav__logo, .mobile-nav .nav__logo, .mobile-nav .mobile-nav__logo {
   font-size: 24px;
@@ -195,19 +196,22 @@ body {
 }
 .mobile-nav .hamburger {
   display: flex;
+  width: max-content;
+  height: max-content;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: 25px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #00004d;
 }
 
 .mobile-listed-items-container {
   transition: 0.5s ease;
   width: 100%;
   height: max-content;
+  position: absolute;
+  z-index: 99;
   background-color: #000076;
   transform: translateX(-100%);
 }
@@ -271,6 +275,92 @@ body {
   color: #FAFA33;
 }
 .mobile-listed-items-container .mobile-sub__nav .mobile-nav__buttons button:active {
+  background-color: #0000e6;
+  transition: 0.3s ease;
+  transform: scale(98%);
+}
+
+.home-banner-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+.home-banner-container .sub-home-banner-container {
+  width: 100%;
+  height: 88%;
+  position: absolute;
+  top: 80px;
+  display: flex;
+}
+.home-banner-container .sub-home-banner-container .banner-img {
+  width: 600px;
+  height: 580px;
+  background-image: url(../images/banner.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  margin-left: 2.5em;
+}
+.home-banner-container .sub-home-banner-container .banner-text {
+  width: 42%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 8em;
+}
+.home-banner-container .sub-home-banner-container .banner-text .ml10 {
+  margin-left: 10px;
+  color: #000080;
+  font-weight: 700;
+  font-size: 20px;
+}
+.home-banner-container .sub-home-banner-container .banner-text .ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+.home-banner-container .sub-home-banner-container .banner-text .mll1 {
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 40px;
+  color: #000080;
+  font-weight: lighter;
+}
+.home-banner-container .sub-home-banner-container .banner-text .btn-holder {
+  margin-left: 10px;
+}
+.home-banner-container .sub-home-banner-container .banner-text .btn-holder button {
+  border: none;
+  outline: none;
+  background: none;
+  width: 148px;
+  height: 48px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000080;
+  background-color: #0000b3;
+}
+.home-banner-container .sub-home-banner-container .banner-text .btn-holder button a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.home-banner-container .sub-home-banner-container .banner-text .btn-holder button:hover {
+  background-color: #0000b3;
+  transition: 0.3s ease;
+  transform: scale(99%);
+}
+.home-banner-container .sub-home-banner-container .banner-text .btn-holder button:active {
   background-color: #0000e6;
   transition: 0.3s ease;
   transform: scale(98%);
