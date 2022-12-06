@@ -48,4 +48,4 @@ anime.timeline({loop: true})
   });
 
   ScrollReveal().reveal('.mll1', { delay: 1000 });
-  ScrollReveal().reveal('.btn', { delay: 2000 });
+  ScrollReveal().reveal('.btn', { delay: 3000 });

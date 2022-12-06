@@ -215,7 +215,8 @@ body {
   transform: translateX(-100%);
 }
 .mobile-listed-items-container.toggle-nav {
-  transform: translateX(0);
+  position: fixed;
+  transform: translateX(0%);
 }
 .mobile-listed-items-container .mobile-sub__nav {
   width: 100%;

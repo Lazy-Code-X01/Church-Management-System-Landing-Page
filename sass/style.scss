@@ -156,7 +156,8 @@
     transform: translateX(-100%);
     &.toggle-nav{
         // display: block;
-        transform: translateX(0)
+        position: fixed;
+        transform: translateX(0%)
     }
 
     .mobile-sub__nav{

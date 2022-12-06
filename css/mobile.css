@@ -34,17 +34,6 @@
   .mobile {
     display: flex;
   }
-  .home-banner-container {
-    background-image: url(../images/banner.PNG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right center;
-  }
-  .home-banner-container .overlay {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(184, 186, 178, 0.261);
-  }
   .home-banner-container .sub-home-banner-container .banner-img {
     display: none;
   }
