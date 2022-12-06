@@ -192,7 +192,6 @@ body {
 .mobile-nav {
   align-items: center;
   z-index: 99999;
-  padding: 10px 0px;
 }
 .mobile-nav .hamburger {
   display: flex;
@@ -209,7 +208,7 @@ body {
 .mobile-listed-items-container {
   transition: 0.5s ease;
   width: 100%;
-  height: max-content;
+  height: 100%;
   position: absolute;
   z-index: 99;
   background-color: #000076;
@@ -284,7 +283,6 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: white;
 }
 .home-banner-container .sub-home-banner-container {
   width: 100%;
@@ -329,7 +327,6 @@ body {
   line-height: 1.3;
   font-size: 40px;
   color: #000080;
-  font-weight: lighter;
 }
 .home-banner-container .sub-home-banner-container .banner-text .btn-holder {
   margin-left: 10px;

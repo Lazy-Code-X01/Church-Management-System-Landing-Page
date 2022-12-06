@@ -71,6 +71,15 @@
 
     // home section
     .home-banner-container{
+        background-image: url(../images/banner.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+        .overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(184, 186, 178, 0.261);
+        }
         .sub-home-banner-container{
             .banner-img{
                 display: none;
