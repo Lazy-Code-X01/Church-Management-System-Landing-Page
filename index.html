@@ -16,12 +16,15 @@
     
     <!--for mobile navigations-->
     <link rel="stylesheet" href="./css/mobile.css">
+
     <!--linking anime js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     
+    <!--scroll reveal js-->
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+
 
 <!--for mobile navigation-->
 <div class="mobile">
@@ -50,7 +53,7 @@
         </div>
   
         <div class="mobile-nav__buttons">
-          <button>
+          <button onclick="signIn2()">
             <a href="#" class="--sign-in">
               <i class='bx bxs-user'></i>
               Sign In
@@ -68,8 +71,9 @@
   </div>
   
 </div>
-<!--mobile navigation ends here-->
 
+
+<!--mobile navigation ends here-->
 <div class="nav">
     <div class="nav__logo">
       <p class="logo">CaaS</p>
@@ -87,8 +91,8 @@
         </div>
         
         <div class="nav__buttons">
-          <button>
-            <a href="#" class="--sign-in">
+          <button onclick="signIn()">
+            <a href="#sign-in" class="--sign-in">
               <i class='bx bxs-user'></i>
               Sign In
             </a>
@@ -104,7 +108,8 @@
     </div>  
 </div>
 
-<!-- first sectio banner Home Page -->
+
+<!-- first section banner Home Page -->
 <section class="home-banner-container scroll-reveal">
   <div class="overlay"></div>
   <div class="sub-home-banner-container">
@@ -137,7 +142,39 @@
       </div>
     </div>
   </div>
+
+  <section class="sign__up__form__container-overlay scroll-reveal" id="sign-in">
+    <div class="sub-sign__up__form__container">
+      <div class="close">
+        <i class='bx bx-x' onclick="closeModal()"></i>
+      </div>
+      <form class="form">
+        <!-- <p class="alert"></p> -->
+        <h1>Sign In</h1>
+        <div class="form-cont">
+          <div class="form-X">
+            <label for="username">Username</label> <br>
+            <input type="text" placeholder="Enter Username" name="username" required id="usernmae" autofocus>
+          </div>
+
+          <div class="form-X">
+            <label for="password">password</label> <br>
+            <input type="password" placeholder="Enter Password" name="password" required id="password">
+          </div>
+        </div>
+
+        <div class="btn-container">
+          <button type="submit">
+            <a href="#">sign in</a>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
 </section>
+
+
 
 
 
