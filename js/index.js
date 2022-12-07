@@ -40,8 +40,6 @@ function closeModal() {
 // mobile sign up modal
 function signIn2() {
   modalSignInForm.style.display = 'flex'
-  usernameField.focus()
-
   // when i click the sign up toggle back the HAMBURGER MENU AND THE NAV
   hamburger.classList.toggle("is-active");
   mobileListedItems.classList.toggle('toggle-nav')
