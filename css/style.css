@@ -383,7 +383,7 @@ body {
   display: none;
 }
 .home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container {
-  position: relative;
+  position: fixed;
   width: 50%;
   height: 60%;
   background-color: white;
