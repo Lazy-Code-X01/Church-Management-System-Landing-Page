@@ -383,7 +383,7 @@ body {
   display: none;
 }
 .home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container {
-  position: fixed;
+  position: relative;
   width: 50%;
   height: max-content;
   background-color: white;
@@ -395,6 +395,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animatetop;
   animation-duration: 0.4s;
+  padding: 4em 0;
 }
 .home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .close {
   position: absolute;

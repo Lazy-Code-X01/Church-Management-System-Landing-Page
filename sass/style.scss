@@ -356,8 +356,8 @@
         }
 
         .sub-sign__up__form__container{
-            // position: relative;
-            position: fixed;
+            position: relative;
+            // position: fixed;
             width: 50%;
             height: max-content;
             background-color: white;
@@ -367,6 +367,7 @@
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
             animation-name: animatetop;
             animation-duration: 0.4s;
+            padding: 4em 0;
             .close{
                 position: absolute;
                 top: -5px;
