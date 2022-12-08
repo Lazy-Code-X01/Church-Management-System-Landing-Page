@@ -76,6 +76,15 @@
             }
         }
     }
+
+    //reach us
+    .reach-us{
+        .sub-reach-us{
+            .form__map__holder{
+                width: 80%;
+            }
+        }
+    }
 }
 
  //low resolution tabelets and ipads
@@ -180,6 +189,36 @@
                     margin-left: auto;
                     margin-right: auto;
                     width: calc(80% + 1em);
+                }
+            }
+        }
+    }
+
+    //reach us
+    .reach-us{
+        height: max-content;
+        .sub-reach-us{
+            margin-top: 1em;
+            .form__map__holder{
+                flex-direction: column;
+                .map-holder{
+                    width: 100%;
+                }
+
+                .form{
+                    width: 100%;
+                    margin-bottom: 2em;
+                    .form-H{
+                        width: 100%;
+
+                        input{
+                            width: 100%;
+                        }
+                        
+                        textarea{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }

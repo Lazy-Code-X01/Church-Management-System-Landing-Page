@@ -33,6 +33,9 @@
     margin-left: 1.8em;
     width: calc(20% + 1em);
   }
+  .reach-us .sub-reach-us .form__map__holder {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 768px) {
   .nav {
@@ -113,5 +116,30 @@
     margin-left: auto;
     margin-right: auto;
     width: calc(80% + 1em);
+  }
+  .reach-us {
+    height: max-content;
+  }
+  .reach-us .sub-reach-us {
+    margin-top: 1em;
+  }
+  .reach-us .sub-reach-us .form__map__holder {
+    flex-direction: column;
+  }
+  .reach-us .sub-reach-us .form__map__holder .map-holder {
+    width: 100%;
+  }
+  .reach-us .sub-reach-us .form__map__holder .form {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .reach-us .sub-reach-us .form__map__holder .form .form-H {
+    width: 100%;
+  }
+  .reach-us .sub-reach-us .form__map__holder .form .form-H input {
+    width: 100%;
+  }
+  .reach-us .sub-reach-us .form__map__holder .form .form-H textarea {
+    width: 100%;
   }
 }

@@ -546,7 +546,9 @@
     }
 }
 
+//Features
 .features-section{
+    // display: none;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -613,6 +615,7 @@
                     font-size: 18px;
                     text-align: center;
                     z-index: 2;
+                    line-height: 2;
                 }
                 &:nth-child(1){
                     background-image:url(../images/attendant.svg);
@@ -643,6 +646,154 @@
     }
 }
 
+//Pricing 
+.pricing-section{
+    // display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #F1F9FF;
+    margin-bottom: 4em;
+    .sub-pricing-section{
+        width: 100%;
+        height: 100%;
+        @include flexCenter;
+        h1{
+            color: #BCE0FD;
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+}
+
+
+// Reach Us
+.reach-us{
+    width: 100%;
+    height: 100vh;
+    // background-color: #F1F9FF;
+    @include flexCenter;
+
+    .sub-reach-us{
+        width: 100%;
+        height: max-content;
+        // background-color: #bababa;
+        margin-top: 8em;
+
+        h1{
+            font-size: 24px;
+            color: $primary-color;
+            text-align: center;
+            margin-top: 4em;
+        }
+
+        .form__map__holder{
+            width: 60%;
+            height: max-content;
+            margin: 4em  auto;
+            // background-color: gray;
+            @include flexCenter;
+            justify-content: space-between;
+
+            .form{
+                width: 43%;
+                height: max-content;
+                // background-color: #BCE0FD;
+
+                .form-H{
+                    width: 70%;
+                    height: max-content;
+                    // background-color: green;
+
+                    label{
+                        font-size: 16px;
+                        color: $primary-color;
+                        font-weight: 700;
+                    }
+                    input{
+                        margin-top: 10px;
+                        margin-bottom: 33px;
+                        border: none;
+                        background: none;
+                        outline: none;
+                        background-color: #F1F9FF;
+                        border: 2px solid #BCE0FD;
+                        height: 40px;
+                        width: 320px;
+                        border-radius: 5px;
+                        
+                        text-transform: capitalize;
+                        text-indent: 10px;
+                    }
+                    textarea{
+                        background: none;
+                        text-indent: 10px;
+                        border:none;
+                        outline: none;
+                        width: 320px;
+                        height: 140px;
+                        margin-top: 10px;
+                        resize: none;
+                        border-radius:5px;
+                        background-color: #F1F9FF;
+                        border: 2px solid #BCE0FD;
+                    }
+                }
+                .btn-container{
+                    margin-top: 1em;
+                    button{
+                        border: none;
+                        outline: none;
+                        background: none;
+                        width: 148px;
+                        height: 48px;
+                        cursor: pointer;
+                        background-color: lighten($color: $primary-color, $amount: 10);
+                        border-radius: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+            
+                        a{
+                            font-size: 16px;
+                            color: white;
+                            text-decoration: none;
+            
+                            i{
+                                padding-right: 5px;
+                                font-size: 18px;
+                                color: $secondary-color;
+                            }
+                        }
+        
+                        &:hover{
+                            // background-color: lighten($color: $primary-color, $amount: 10);
+                            // transition: .3s ease;
+                            // transform: scale(99%);
+                        }
+        
+                        &:active{
+                            background-color: lighten($color: $primary-color, $amount: 20);
+                            transition: .3s ease;
+                            transform: scale(98%);
+                        }
+                    }
+            }
+        }
+
+            .map-holder{
+                width: 381px;
+                height: 565px;
+                background-color: #fafafa;
+                background-image: url(../images/contact.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+}
 //@at-root/* Add Animation */
 @keyframes animatetop {
     from {top: -300px; opacity: 0}

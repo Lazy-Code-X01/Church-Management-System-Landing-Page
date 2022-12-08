@@ -67,8 +67,14 @@ function signIn2() {
   hamburger.classList.toggle("is-active");
   mobileListedItems.classList.toggle('toggle-nav')
 }
-
 // --------- end for the modal
+
+// reachus
+function reachUs() {
+  hamburger.classList.toggle("is-active");
+  mobileListedItems.classList.toggle('toggle-nav')
+}
+
 
 //scroll reveal js implementation
 ScrollReveal().reveal('.scroll-reveal', {
@@ -82,6 +88,7 @@ ScrollReveal().reveal('.btn', { delay: 3000 });
 ScrollReveal().reveal('.text1', { delay: 1000 });
 ScrollReveal().reveal('.text2', { delay: 2000 });
 ScrollReveal().reveal('.box', { delay: 1000 });
+ScrollReveal().reveal('.sub-reach-us', { delay: 1000 });
 
 
 // function for the "you dont hve to loose one" text animation
