@@ -13,6 +13,27 @@ function addActiveClass() {
 }
 addActiveClass()
 
+//add effect to the sticky nav onscroll
+window.addEventListener('scroll', () =>{
+  const navbar = document.querySelector('#nav')
+  const navbar2 = document.querySelector('#nav2')
+  navbar.classList.toggle('sticky', window.scrollY > 0)
+  navbar2.classList.toggle('sticky', window.scrollY > 0)
+})
+
+//close the nav when li is clicked
+const closeNavWhenLiIsClicked = () => {
+  let all_li = document.querySelectorAll(".listed-item");
+  all_li.forEach(function(li) {
+      li.addEventListener("click", function() {
+        hamburger.classList.toggle("is-active");
+        mobileListedItems.classList.toggle('toggle-nav')
+      });
+  });
+}
+closeNavWhenLiIsClicked()
+
+
 // for the hamburger menu
 const hamburger = document.querySelector(".hamburger");
 const mobileListedItems = document.querySelector(".mobile-listed-items-container");
@@ -29,9 +50,10 @@ hamburger.addEventListener("click", function() {
 const modalSignInForm = document.querySelector('#sign-in')
 const usernameField = document.getElementById('usernmae')
 function signIn() {
+  document.documentElement.scrollTop = 0;
   modalSignInForm.style.display = 'flex'
   document.getElementById('usernmae').focus()
-  // console.log(usernameField);
+  console.log(usernameField);
 }
 function closeModal() {
   modalSignInForm.style.display = 'none'
@@ -39,6 +61,7 @@ function closeModal() {
 
 // mobile sign up modal
 function signIn2() {
+  document.documentElement.scrollTop = 0;
   modalSignInForm.style.display = 'flex'
   // when i click the sign up toggle back the HAMBURGER MENU AND THE NAV
   hamburger.classList.toggle("is-active");
@@ -56,6 +79,8 @@ ScrollReveal().reveal('.scroll-reveal', {
 
 ScrollReveal().reveal('.mll1', { delay: 1000 });
 ScrollReveal().reveal('.btn', { delay: 3000 });
+ScrollReveal().reveal('.text1', { delay: 1000 });
+ScrollReveal().reveal('.text2', { delay: 3000 });
 
 
 // function for the "you dont hve to loose one" text animation
