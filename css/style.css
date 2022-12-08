@@ -556,6 +556,99 @@ html {
   color: black;
 }
 
+.features-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-top: 1em;
+}
+.features-section .sub-features-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.features-section .sub-features-section h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #000080;
+  text-transform: uppercase;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.features-section .sub-features-section .box-container {
+  width: 100%;
+  height: max-content;
+  background-color: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-section .sub-features-section .box-container .box {
+  position: relative;
+  margin-left: 2em;
+  margin-bottom: 55px;
+  margin-top: 55px;
+  width: calc(20% + 2em);
+  height: 20em;
+  background-color: #F1F9FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+.features-section .sub-features-section .box-container .box::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  border-radius: 5px;
+}
+.features-section .sub-features-section .box-container .box:hover {
+  transform: scale(109%);
+}
+.features-section .sub-features-section .box-container .box:active {
+  transform: scale(99%);
+}
+.features-section .sub-features-section .box-container .box p {
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  z-index: 2;
+}
+.features-section .sub-features-section .box-container .box:nth-child(1) {
+  background-image: url(../images/attendant.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.features-section .sub-features-section .box-container .box:nth-child(2) {
+  background-image: url(../images/monitor.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.features-section .sub-features-section .box-container .box:nth-child(3) {
+  background-image: url(../images/track.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.features-section .sub-features-section .box-container .box:nth-child(4) {
+  background-image: url(../images/celeberate.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 @keyframes animatetop {
   from {
     top: -300px;

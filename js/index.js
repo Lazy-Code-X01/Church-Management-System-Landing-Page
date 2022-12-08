@@ -80,7 +80,8 @@ ScrollReveal().reveal('.scroll-reveal', {
 ScrollReveal().reveal('.mll1', { delay: 1000 });
 ScrollReveal().reveal('.btn', { delay: 3000 });
 ScrollReveal().reveal('.text1', { delay: 1000 });
-ScrollReveal().reveal('.text2', { delay: 3000 });
+ScrollReveal().reveal('.text2', { delay: 2000 });
+ScrollReveal().reveal('.box', { delay: 1000 });
 
 
 // function for the "you dont hve to loose one" text animation
