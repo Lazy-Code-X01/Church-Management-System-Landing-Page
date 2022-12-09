@@ -726,7 +726,6 @@ html {
 }
 .reach-us .sub-reach-us .form__map__holder .form .form-H textarea {
   background: none;
-  text-indent: 10px;
   border: none;
   outline: none;
   width: 320px;
@@ -736,6 +735,9 @@ html {
   border-radius: 5px;
   background-color: #F1F9FF;
   border: 2px solid #BCE0FD;
+  padding: 10px;
+  padding: 10px;
+  font-family: "Nunito Sans", sans-serif;
 }
 .reach-us .sub-reach-us .form__map__holder .form .btn-container {
   margin-top: 1em;
