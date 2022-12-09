@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) {
+    .section{
+        padding: 2em;
+        .btn-holder{
+            width: 50%;
+        }
+
+        .form_container{
+            form{
+                .form_box{
+                    display: inline-block;
+
+                    .form_box_content{
+                        width: 100%;
+                    }
+                }
+
+                .btn_holder{
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section{
+        padding: 1em;
+
+        .btn-holder{
+            button{
+                width: 70%;
+                margin-bottom: 1em;
+            }
+        }
+
+        .form_container{
+            form{
+                width: 100%;
+                .form_box{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

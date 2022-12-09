@@ -1,0 +1,135 @@
+@import './color';
+@import './utility';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 3em;
+    background-image: url(../image/get-started.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    // background-color: aquamarine;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;    
+        background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .8));
+    }
+
+    .btn-holder{
+        position: relative;
+        width: 40%;
+        height: max-content;
+        z-index: 1;
+        button{
+            height: 40px;
+            width: 20%;
+            background: none;
+            outline: none;
+            border: none;
+            @include flexCenter;
+
+            a{
+                font-size: 18px;
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .get-started{
+        position: relative;
+        z-index: 1;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 1em;
+        font-weight: 700;
+        color: $primary-color;
+    }
+    .form_container{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: max-content;
+        // background-color: green;
+        @include flexCenter;
+        margin-top: 2em;
+
+        form{
+            width: 80%;
+            height: max-content;
+            // background-color: rgb(17, 130, 130);
+            @include flexCenter;
+            flex-direction: column;
+            .form_box{
+                width: 80%;
+                height: max-content;
+                // background-color: aquamarine;
+                display: flex;
+                justify-content: space-between;
+
+                .form_box_content{
+                    width: 40%;
+                    height: max-content;
+                    margin-bottom: 2em;
+                    // background-color: blue;
+
+                    label{
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: $primary-color;
+                        text-transform: uppercase;
+                    }
+                
+                    input{
+                        outline: none;
+                        border: none;
+                        background: none;
+                        margin-top: 5px;
+                        width: 100%;
+                        border: 2px solid #BCE0FD;
+                        background-color: #F1F9FF;
+                        // width: 360px;
+                        height: 45px;
+                        border-radius: 5px;
+                        text-indent: 10px;
+                    }
+                }
+            }
+
+            .btn_holder{
+                width: 80%;
+                @include flexCenter;
+                height: max-content;
+
+                button{
+                    outline: none;
+                    border: none;
+                    background: none;
+                    width: 130px;
+                    height: 40px;
+                    border-radius: 5px;
+                    color: white;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
