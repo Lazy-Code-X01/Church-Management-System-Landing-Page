@@ -43,21 +43,29 @@ hamburger.addEventListener("click", function() {
 });
 
 
-
-
-
 // ------------ for the nodal
 const modalSignInForm = document.querySelector('#sign-in')
 const usernameField = document.getElementById('usernmae')
+
+function closeModal() {
+  modalSignInForm.style.display = 'none'
+}
+
+// when window scroll past 450px hide the sign up
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 450) {
+    closeModal()
+  }
+  return;
+})
+
 function signIn() {
   document.documentElement.scrollTop = 0;
   modalSignInForm.style.display = 'flex'
   document.getElementById('usernmae').focus()
   console.log(usernameField);
 }
-function closeModal() {
-  modalSignInForm.style.display = 'none'
-}
+
 
 // mobile sign up modal
 function signIn2() {
@@ -84,13 +92,37 @@ function reachUs() {
 
 
 ScrollReveal().reveal('.mll1', { delay: 1000 });
-ScrollReveal().reveal('.btn', { delay: 3000 });
+ScrollReveal().reveal('.btn', { delay: 2000 });
 ScrollReveal().reveal('.text1', { delay: 1000 });
-ScrollReveal().reveal('.text2', { delay: 2000 });
+ScrollReveal().reveal('.text2', { delay: 1000 });
 ScrollReveal().reveal('.box', { delay: 1000 });
 ScrollReveal().reveal('.reach-us', { delay: 1000 });
 ScrollReveal().reveal('.pricing-section', { delay: 1000 });
 
+
+
+//function to scroll to top button
+const scrollBtn = document.querySelector(".btn-style");
+const btnVisibility = () => {
+  if (window.scrollY > 400) {
+      scrollBtn.style.visibility = "visible";
+  } else {
+      scrollBtn.style.visibility = "hidden";
+  }
+};
+
+document.addEventListener("scroll", () => {
+  btnVisibility();
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+});
+
+// end
 
 
 // function for the "you dont hve to loose one" text animation

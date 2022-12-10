@@ -9,10 +9,11 @@
 }
 .section{
     position: relative;
+    position: fixed;
     width: 100%;
     height: 100vh;
     padding: 3em;
-    background-image: url(../image/get-started.svg);
+    // background-image: url(../image/get-started.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
