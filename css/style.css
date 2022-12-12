@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 html {
@@ -298,32 +298,27 @@ html {
 }
 .home-banner-container .sub-home-banner-container {
   width: 100%;
-  height: 88%;
+  min-height: 100%;
   position: absolute;
   top: 80px;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.home-banner-container .sub-home-banner-container .banner-img {
-  width: 600px;
-  height: 580px;
-  background-image: url(../images/banner.PNG);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  margin-left: 2.5em;
+.home-banner-container .sub-home-banner-container .banner-img img {
+  height: auto;
+  max-width: 100%;
 }
 .home-banner-container .sub-home-banner-container .banner-text {
-  width: 42%;
-  height: 100%;
+  margin-left: 30px;
+  width: 60%;
   display: flex;
-  align-items: center;
-  margin-left: 8em;
+  align-items: flex-start;
 }
 .home-banner-container .sub-home-banner-container .banner-text .ml10 {
-  margin-left: 10px;
   color: #000080;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 23px;
 }
 .home-banner-container .sub-home-banner-container .banner-text .ml10 .letter {
   display: inline-block;
@@ -332,16 +327,19 @@ html {
 }
 .home-banner-container .sub-home-banner-container .banner-text .mll1 {
   margin: 0;
-  margin-left: 10px;
   margin-top: 30px;
   margin-bottom: 30px;
   text-transform: uppercase;
-  line-height: 1.3;
+  line-height: 1.5;
   font-size: 40px;
   color: #000080;
 }
-.home-banner-container .sub-home-banner-container .banner-text .btn-holder {
-  margin-left: 10px;
+.home-banner-container .sub-home-banner-container .banner-text p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  margin: 2rem 0px;
 }
 .home-banner-container .sub-home-banner-container .banner-text .btn-holder button {
   border: none;
@@ -374,137 +372,12 @@ html {
   transition: 0.3s ease;
   transform: scale(98%);
 }
-.home-banner-container .sign__up__form__container-overlay {
-  width: 100%;
-  height: 90%;
-  position: fixed;
-  top: 69px;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  transition: 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
-.home-banner-container .sign__up__form__container-overlay.show {
-  display: flex;
-}
-.home-banner-container .sign__up__form__container-overlay.hide {
-  display: none;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container {
-  position: relative;
-  width: 50%;
-  height: max-content;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-  padding: 4em 0;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .close {
-  position: absolute;
-  top: -5px;
-  right: 0%;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .close i {
-  padding: 0.5em;
-  font-size: 30px;
-  color: #000080;
-  cursor: pointer;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container h1 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #000080;
-  text-transform: uppercase;
-  text-align: center;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .form-cont {
-  width: 100%;
-  height: max-content;
-  display: flex;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .form-cont .form-X:nth-child(1) {
-  margin-right: 2em;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .form-cont .form-X label {
-  font-size: 16px;
-  color: #000080;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .form-cont .form-X input {
-  width: 200px;
-  height: 35px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: 2px solid #BCE0FD;
-  background-color: #F1F9FF;
-  padding-left: 5px;
-  font-size: 16px;
-  outline: none;
-  transition: 0.3s ease;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .form-cont .form-X input:active {
-  border: 2px solid #8ac9fc;
-  transition: 0.3s ease;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .btn-container {
-  width: 100%;
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3em;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .btn-container button {
-  border: none;
-  outline: none;
-  background: none;
-  width: 130px;
-  height: 40px;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: #0000b3;
-  margin-left: 35px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .btn-container button a {
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .btn-container button a i {
-  padding-right: 5px;
-  font-size: 18px;
-  color: #FAFA33;
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .btn-container button:hover {
-  background-color: #0000b3;
-  transition: 0.3s ease;
-  transform: scale(99%);
-}
-.home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .btn-container button:active {
-  background-color: #0000e6;
-  transition: 0.3s ease;
-  transform: scale(98%);
-}
 
 .about-us-banner {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../images/banner.PNG) rgba(0, 0, 0, 0.4);
+  background: url(../images/about-bg.gif) rgba(0, 0, 0, 0.4);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -582,7 +455,6 @@ html {
 .features-section .sub-features-section .box-container {
   width: 100%;
   height: max-content;
-  background-color: #fafafa;
   display: flex;
   flex-wrap: wrap;
 }
@@ -627,25 +499,25 @@ html {
   line-height: 2;
 }
 .features-section .sub-features-section .box-container .box:nth-child(1) {
-  background-image: url(../images/attendant.svg);
+  background-image: url(../images/attendant-gif.gif);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 .features-section .sub-features-section .box-container .box:nth-child(2) {
-  background-image: url(../images/monitor.svg);
+  background-image: url(../images/monitor-gif.gif);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 .features-section .sub-features-section .box-container .box:nth-child(3) {
-  background-image: url(../images/track.svg);
+  background-image: url(../images/track-wellbeing.gif);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 .features-section .sub-features-section .box-container .box:nth-child(4) {
-  background-image: url(../images/celeberate.svg);
+  background-image: url(../images/celeberate-gif.gif);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

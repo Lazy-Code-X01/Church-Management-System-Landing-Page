@@ -1,0 +1,169 @@
+@import '../../sass/utilities';
+@import '../../sass/color';
+@import '../../sass/defaults';
+
+body{
+    // overflow-y: hidden;
+    font-family: 'My Soul', cursive;
+    font-family: 'Karla', sans-serif;
+    // font-family: 'Nunito Sans', sans-serif;
+}
+.sign__up__form__container{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    @include flexCenter;
+
+    .background{
+        position: relative;
+        width: 70%;
+        height: 100%;
+        width: calc(100% - 480px);
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: brightness(75%);
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            width: 100%;
+        }
+    }
+
+    .sub-sign__up__form__container{
+        width: 480px;
+        height: 100%;
+        background-color: #fff;
+        @include flexCenter;
+        // padding: 40px 20px;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        .form{
+            @include flexCenter;
+            height: 100%;
+            position: relative;
+            width: 320px;
+            // background-color: antiquewhite;
+            flex-direction: column;
+
+            .logo{
+                margin-bottom: 4rem;
+                font-size: 30px;
+                font-weight: 700;
+                color: $primary-color;
+
+                i{
+                    color: darken($color: $secondary-color, $amount: 12);
+                }
+                
+                @media screen and (max-width: 425px) {
+                    font-size: 25px;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            h1{
+                
+                font-size: 24px;
+                color: $primary-color;
+                font-weight: normal;
+
+                @media screen and (max-width: 425px) {
+                    font-size: 23px;
+                }
+            }
+            .form-X{
+                width: 100%;
+                height: max-content;
+
+                label{
+                    font-size: 16px;
+                    color: $primary-color;
+                    // font-weight: 600;
+                    text-transform: capitalize;
+                }
+                input{
+                    margin-top: 10px;
+                    margin-bottom: 33px;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    background-color: #F1F9FF;
+                    border: 2px solid #BCE0FD;
+                    height: 40px;
+                    width: 320px;
+                    border-radius: 5px;
+                    
+                    text-transform: capitalize;
+                    text-indent: 10px;
+
+                    &:active,
+                    &:focus{
+                        border: 2px solid lighten($color: #BCE0FD, $amount: 3);
+                        transition: .3s ease;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        width: 100%;
+                    }
+                }
+            }
+            .btn-container{
+                width: 100%;
+                height: 40px;
+
+                button{
+                    outline: none;
+                    border: none;
+                    background: none;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $primary-color;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    a{
+                        font-size: 16px;
+                        color: white;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        i{
+                            padding-right: 5px;
+                            font-size: 18px;
+                            color: $secondary-color;
+                        }
+                    }
+
+                            
+                    &:active{
+                        background-color: lighten($color: $primary-color, $amount: 20);
+                        transition: .3s ease;
+                        transform: scale(98%);
+                    }
+                }
+            }
+
+            @media screen and (max-width: 425px) {
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .sign__up__form__container{
+        .background{
+            display: none;
+        }
+    }
+}
+
+
+// @media screen and (max-width:320px) {
+    
+// }

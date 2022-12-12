@@ -44,38 +44,38 @@ hamburger.addEventListener("click", function() {
 
 
 // ------------ for the nodal
-const modalSignInForm = document.querySelector('#sign-in')
-const usernameField = document.getElementById('usernmae')
+// const modalSignInForm = document.querySelector('#sign-in')
+// const usernameField = document.getElementById('usernmae')
 
-function closeModal() {
-  modalSignInForm.style.display = 'none'
-}
+// function closeModal() {
+//   modalSignInForm.style.display = 'none'
+// }
 
-// when window scroll past 450px hide the sign up
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 450) {
-    closeModal()
-  }
-  return;
-})
+// // when window scroll past 450px hide the sign up
+// window.addEventListener('scroll', function () {
+//   if (window.scrollY > 450) {
+//     closeModal()
+//   }
+//   return;
+// })
 
-function signIn() {
-  document.documentElement.scrollTop = 0;
-  modalSignInForm.style.display = 'flex'
-  document.getElementById('usernmae').focus()
-  console.log(usernameField);
-}
+// function signIn() {
+//   document.documentElement.scrollTop = 0;
+//   modalSignInForm.style.display = 'flex'
+//   document.getElementById('usernmae').focus()
+//   console.log(usernameField);
+// }
 
 
-// mobile sign up modal
-function signIn2() {
-  document.documentElement.scrollTop = 0;
-  modalSignInForm.style.display = 'flex'
-  // when i click the sign up toggle back the HAMBURGER MENU AND THE NAV
-  hamburger.classList.toggle("is-active");
-  mobileListedItems.classList.toggle('toggle-nav')
-}
-// --------- end for the modal
+// // mobile sign up modal
+// function signIn2() {
+//   document.documentElement.scrollTop = 0;
+//   modalSignInForm.style.display = 'flex'
+//   // when i click the sign up toggle back the HAMBURGER MENU AND THE NAV
+//   hamburger.classList.toggle("is-active");
+//   mobileListedItems.classList.toggle('toggle-nav')
+// }
+// // --------- end for the modal
 
 // reachus
 function reachUs() {

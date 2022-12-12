@@ -9,6 +9,7 @@
 
 // for ipads potrait mode 
 @media screen and (max-width: 1024px) {
+    //nav
     .nav{
         // background-color: brown;
         .sub-nav{
@@ -36,13 +37,15 @@
 
     // home section
     .home-banner-container {
+
         .sub-home-banner-container{
+            flex-direction: column;
             .banner-img{
-                width: 500px;
+                // width: 500px;
             }
             .banner-text{
-                width: 50%;
-                margin-left: 3em;
+                width: 90%;
+                // margin-left: 3em;
                 .mll1{
                     font-size: 30px;
                     line-height: 1.5;
@@ -55,7 +58,7 @@
                         width: 130px;
                     }
                 }
-            }
+            // }
         }
 
         .sign__up__form__container-overlay{
@@ -99,46 +102,28 @@
 
     // home section
     .home-banner-container{
-        .sub-home-banner-container{
-            .banner-img{
-                display: none;
-            }
 
-            .banner-text{
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+    
 
-                .mll1{
-                    font-size: 25px;
-                }
+        // .sign__up__form__container-overlay{
+        //     .sub-sign__up__form__container{
+        //         width: 80%;
+        //         .form-cont{
+        //             flex-direction: column;
+        //             align-items: center;
+        //             justify-content: center;
 
-                .ml10{
-                    font-size: 18px;
-                }
-            }
-        }
+        //             .form-X:nth-child(1){
+        //                 margin-right: 0;
+        //                 margin-bottom: 2em;
+        //             }
+        //         }
 
-        .sign__up__form__container-overlay{
-            .sub-sign__up__form__container{
-                width: 80%;
-                .form-cont{
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-
-                    .form-X:nth-child(1){
-                        margin-right: 0;
-                        margin-bottom: 2em;
-                    }
-                }
-
-                .btn-container{
-                    display: flow-root;
-                }
-            }
-        }
+        //         .btn-container{
+        //             display: flow-root;
+        //         }
+        //     }
+        // }
     }
 
     // about us 
@@ -223,4 +208,5 @@
             }
         }
     }
+}
 }

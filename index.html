@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CaaS</title>
-  
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- popins font from google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet" />
 
@@ -59,7 +62,7 @@
   
         <div class="mobile-nav__buttons">
           <button onclick="signIn2()">
-            <a href="#" class="--sign-in">
+            <a href="./Sign_In_Form/sign-in.html" class="--sign-in">
               <i class='bx bxs-user'></i>
               Sign In
             </a>
@@ -97,7 +100,7 @@
         
         <div class="nav__buttons">
           <button onclick="signIn()">
-            <a href="#sign-in" class="--sign-in">
+            <a href="./Sign_In_Form/sign-in.html" class="--sign-in">
               <i class='bx bxs-user'></i>
               Sign In
             </a>
@@ -116,67 +119,40 @@
 
 <!-- first section banner Home Page and singn up modal -->
 <section class="home-banner-container scroll-reveal" id="home">
-  <div class="overlay"></div>
   <div class="sub-home-banner-container">
-    <div class="banner-img"></div>
     <div class="banner-text">
-
       <div class="sub-banner-text-holder">
-
         <!--small annimated text using anime js cdn-->
-        <small class="ml10">
+        <!-- <small class="ml10">
           <span class="text-wrapper">
-            <!--rememver to put S back and dont knock urself out-->
             <span class="letters">You don't have to loose one</span>
           </span>
-        </small>
+        </small>  -->
         <!-- end of small animated text using anime js cdn-->
-        <h1 class="mll1">
-          unlock the  <br>
-          possibilities of <br>
-          tracking every member <br>
+        <!-- <h1 class="mll1">
+          unlock the  
+          possibilities of 
+          tracking every member
           wellbeing 
-        </h1>
-        <div class="btn-holder">
+        </h1> -->
+        <!-- <p>
+          Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.
+        </p> -->
+
+        <!-- <div class="btn-holder">
           <button class="btn">
             <a href="./Get_Started_Form/form.html">
               get started
             </a>  
           </button>
-        </div>
-      </div>
-    </div>
+        </div>  -->
+      </div> 
+    </div>   
+<!-- 
+    <div class="banner-img">
+      <img src="./images/88570-church.gif" alt="background image">
+    </div> -->
   </div>
-
-  <section class="sign__up__form__container-overlay scroll-reveal" id="sign-in">
-    <div class="sub-sign__up__form__container">
-      <div class="close">
-        <i class='bx bx-x' onclick="closeModal()"></i>
-      </div>
-      <form class="form">
-        <!-- <p class="alert"></p> -->
-        <h1>Sign In</h1>
-        <div class="form-cont">
-          <div class="form-X">
-            <label for="username">Username</label> <br>
-            <input type="text" placeholder="Enter Username" name="username" required id="usernmae" autofocus>
-          </div>
-
-          <div class="form-X">
-            <label for="password">password</label> <br>
-            <input type="password" placeholder="Enter Password" name="password" required id="password">
-          </div>
-        </div>
-
-        <div class="btn-container">
-          <button type="submit">
-            <a href="#">sign in</a>
-          </button>
-        </div>
-
-      </form>
-    </div>
-  </section>
 </section>
 
 <!--about section banner ABOUT US-->
@@ -312,20 +288,6 @@
           <li><a href="#">Logo design</a></li>
           <li><a href="#">Banner design</a></li>
         </ul>
-        <!-- <ul class="box">
-          <li class="link_name">Account</li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">My account</a></li>
-          <li><a href="#">Prefrences</a></li>
-          <li><a href="#">Purchase</a></li>
-        </ul> -->
-        <!-- <ul class="box">
-          <li class="link_name">Courses</li>
-          <li><a href="#">HTML & CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">Photography</a></li>
-          <li><a href="#">Photoshop</a></li>
-        </ul> -->
         <ul class="box input-box">
           <li class="link_name">Subscribe</li>
           <li><input type="text" placeholder="Enter your email"></li>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaaS  - Sign in</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="../css/sign-in.css">
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@600&family=My+Soul&family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!--scroll reveal js-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <section class="sign__up__form__container scroll-reveal" id="sign-in">
+
+        <div class="background">
+            <div class="overlay"></div>
+            <img src="./image/50124-user-profile.gif" alt="background">
+        </div>
+
+        <div class="sub-sign__up__form__container">
+            <form class="form">
+                 <div class="logo">
+                    <i class="fab fa-slack"></i>
+                    CaaS
+                </div>
+                
+                 <h1 class="animate__animated animate__rubberBand animate__delay-2s">
+                    Sign In
+                </h1>
+                
+                    <div class="form-X">
+                        <label for="username">Username</label> <br>
+                        <input type="text" placeholder="Enter Username" name="username" required id="usernmae" autofocus>
+                    </div>
+
+                <div class="form-X">
+                    <label for="password">password</label> <br>
+                    <input type="password" placeholder="Enter Password" name="password" required id="password">
+                </div>
+            
+                <div class="btn-container">
+                    <button type="submit">
+                        <a href="#">sign in</a>
+                    </button>
+                </div>
+            </form> 
+        </div>
+
+  </section>
+
+  <script src="./js/sign-in.js"></script>
+</body>
+</html>

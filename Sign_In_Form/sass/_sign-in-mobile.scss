@@ -1,0 +1,16 @@
+
+@media screen and (max-width: 768px) {
+    .sign__up__form__container{
+        .background{
+            display: none;
+        }
+        .form{
+            justify-content: flex-start;
+
+            .logo{
+                margin-bottom: 1rem;
+                font-size: 25px;
+            }
+        }
+    }
+}

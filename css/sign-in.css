@@ -1,0 +1,160 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "My Soul", cursive;
+  font-family: "Karla", sans-serif;
+}
+
+.sign__up__form__container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign__up__form__container .background {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  width: calc(100% - 480px);
+}
+.sign__up__form__container .background img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: brightness(75%);
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  width: 100%;
+}
+.sign__up__form__container .sub-sign__up__form__container {
+  width: 480px;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.sign__up__form__container .sub-sign__up__form__container .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  width: 320px;
+  flex-direction: column;
+}
+.sign__up__form__container .sub-sign__up__form__container .form .logo {
+  margin-bottom: 4rem;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000080;
+}
+.sign__up__form__container .sub-sign__up__form__container .form .logo i {
+  color: #eaea06;
+}
+@media screen and (max-width: 425px) {
+  .sign__up__form__container .sub-sign__up__form__container .form .logo {
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+}
+.sign__up__form__container .sub-sign__up__form__container .form h1 {
+  font-size: 24px;
+  color: #000080;
+  font-weight: normal;
+}
+@media screen and (max-width: 425px) {
+  .sign__up__form__container .sub-sign__up__form__container .form h1 {
+    font-size: 23px;
+  }
+}
+.sign__up__form__container .sub-sign__up__form__container .form .form-X {
+  width: 100%;
+  height: max-content;
+}
+.sign__up__form__container .sub-sign__up__form__container .form .form-X label {
+  font-size: 16px;
+  color: #000080;
+  text-transform: capitalize;
+}
+.sign__up__form__container .sub-sign__up__form__container .form .form-X input {
+  margin-top: 10px;
+  margin-bottom: 33px;
+  border: none;
+  background: none;
+  outline: none;
+  background-color: #F1F9FF;
+  border: 2px solid #BCE0FD;
+  height: 40px;
+  width: 320px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  text-indent: 10px;
+}
+.sign__up__form__container .sub-sign__up__form__container .form .form-X input:active, .sign__up__form__container .sub-sign__up__form__container .form .form-X input:focus {
+  border: 2px solid #cbe7fd;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 425px) {
+  .sign__up__form__container .sub-sign__up__form__container .form .form-X input {
+    width: 100%;
+  }
+}
+.sign__up__form__container .sub-sign__up__form__container .form .btn-container {
+  width: 100%;
+  height: 40px;
+}
+.sign__up__form__container .sub-sign__up__form__container .form .btn-container button {
+  outline: none;
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000080;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sign__up__form__container .sub-sign__up__form__container .form .btn-container button a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.sign__up__form__container .sub-sign__up__form__container .form .btn-container button a i {
+  padding-right: 5px;
+  font-size: 18px;
+  color: #FAFA33;
+}
+.sign__up__form__container .sub-sign__up__form__container .form .btn-container button:active {
+  background-color: #0000e6;
+  transition: 0.3s ease;
+  transform: scale(98%);
+}
+@media screen and (max-width: 425px) {
+  .sign__up__form__container .sub-sign__up__form__container .form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sign__up__form__container .background {
+    display: none;
+  }
+}

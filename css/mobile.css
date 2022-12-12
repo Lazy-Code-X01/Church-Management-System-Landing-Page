@@ -9,12 +9,11 @@
     width: 130px;
     margin-left: 20px;
   }
-  .home-banner-container .sub-home-banner-container .banner-img {
-    width: 500px;
+  .home-banner-container .sub-home-banner-container {
+    flex-direction: column;
   }
   .home-banner-container .sub-home-banner-container .banner-text {
-    width: 50%;
-    margin-left: 3em;
+    width: 90%;
   }
   .home-banner-container .sub-home-banner-container .banner-text .mll1 {
     font-size: 30px;
@@ -26,53 +25,23 @@
   .home-banner-container .sub-home-banner-container .banner-text .btn-holder button {
     width: 130px;
   }
-  .home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container {
+  .home-banner-container .sub-home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container {
     width: 70%;
   }
-  .features-section .sub-features-section .box-container .box {
+  .home-banner-container .features-section .sub-features-section .box-container .box {
     margin-left: 1.8em;
     width: calc(20% + 1em);
   }
-  .reach-us .sub-reach-us .form__map__holder {
+  .home-banner-container .reach-us .sub-reach-us .form__map__holder {
     width: 80%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .nav {
     display: none;
   }
   .mobile {
     display: flex;
-  }
-  .home-banner-container .sub-home-banner-container .banner-img {
-    display: none;
-  }
-  .home-banner-container .sub-home-banner-container .banner-text {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .home-banner-container .sub-home-banner-container .banner-text .mll1 {
-    font-size: 25px;
-  }
-  .home-banner-container .sub-home-banner-container .banner-text .ml10 {
-    font-size: 18px;
-  }
-  .home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container {
-    width: 80%;
-  }
-  .home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .form-cont {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .form-cont .form-X:nth-child(1) {
-    margin-right: 0;
-    margin-bottom: 2em;
-  }
-  .home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container .btn-container {
-    display: flow-root;
   }
   .about-us-banner .sub-about-us-container h1 {
     text-align: center;

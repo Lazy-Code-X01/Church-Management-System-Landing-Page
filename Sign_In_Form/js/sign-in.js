@@ -1,0 +1,1 @@
+ScrollReveal().reveal('.form', { delay: 1000 });

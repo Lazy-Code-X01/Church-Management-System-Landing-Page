@@ -245,43 +245,38 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    // padding-top: 2em;
-    // background-color: white;
-
-
 
     .sub-home-banner-container{
         width: 100%;
-        height: 88%;
+        min-height: 100%;
         position: absolute;
         top: 80px;
         // background-color: green;
         display: flex;
+        align-items: center;
+        justify-content: space-around;
         
         .banner-img{
-            width: 600px;
-            height: 580px;
-            background-image: url(../images/banner.PNG);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: top center;
-            // background-color: $primary-color;
-            margin-left: 2.5em;
+            
+            img{
+                height: auto;
+                max-width: 100%;
+            }
         }
 
         .banner-text{
-            width: 42%;
-            height: 100%;
-            // background-color: $secondary-color;
+            margin-left: 30px;
+            width: 60%;
             display: flex;
-            align-items: center;
-            margin-left: 8em;
+            // flex: 1 1;
+            align-items: flex-start;
 
             .ml10{
-                margin-left: 10px;
+                // margin-left: 10px;
                 color: $primary-color;
                 font-weight: 700;
-                font-size: 20px;
+                font-size: 23px;
+
                 .letter{
                     display: inline-block;
                     line-height: 1em;
@@ -291,19 +286,27 @@
 
             .mll1{
                 margin: 0;
-                margin-left: 10px;
+                // margin-left: 10px;
                 margin-top: 30px;
                 margin-bottom: 30px;
                 text-transform: uppercase;
-                line-height: 1.3;
+                line-height: 1.5;
                 font-size: 40px;
                 color: $primary-color;
                 // font-weight: lighter;
             }
 
+            p{
+                
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: .04em;
+                line-height: 28px;
+                margin: 2rem 0px;
+            }
+
             .btn-holder{
-                margin-left: 10px;
-    
+                // margin-left: 10px;
                 button{
                     border: none;
                     outline: none;
@@ -342,141 +345,7 @@
         }
     }
 
-    // sign up overlay 
-    .sign__up__form__container-overlay{
-        width: 100%;
-        height: 90%;
-        position: fixed;
-        top: 69px;
-        background-color: rgba($color: #000000, $alpha: 0.4);
-        display: flex;
-        transition: .3s ease;
-        @include flexCenter;
-        display: none;
-        &.show{
-            display: flex;
-        }
-        &.hide{
-            display: none;
-        }
 
-        .sub-sign__up__form__container{
-            position: relative;
-            // position: fixed;
-            width: 50%;
-            height: max-content;
-            background-color: white;
-            @include flexCenter;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-            animation-name: animatetop;
-            animation-duration: 0.4s;
-            padding: 4em 0;
-            .close{
-                position: absolute;
-                top: -5px;
-                right: 0%;
-                i{
-                    padding: .5em;
-                    font-size: 30px;
-                    color: $primary-color;
-                    cursor: pointer;
-                }
-            }
-            h1{
-                font-size: 24px;
-                font-weight: 700;
-                color: $primary-color;
-                text-transform: uppercase;
-                text-align: center;
-            }
-            .form-cont{
-                width: 100%;
-                height: max-content;
-                display: flex;
-                // background-color: green;
-                .form-X{
-
-                    &:nth-child(1){
-                        // background-color: red;
-                        margin-right: 2em;
-                    }
-
-                    label{
-                        font-size: 16px;
-                        color: $primary-color;
-                        text-transform: capitalize;
-                        font-weight: bold;
-                    }
-                    
-                    input{
-                        width: 200px;
-                        height: 35px;
-                        margin-top: 10px;
-                        border-radius: 5px;
-                        border: 2px solid #BCE0FD;
-                        background-color: #F1F9FF;
-                        padding-left: 5px;
-                        font-size: 16px;
-                        outline: none;
-                        transition: .3s ease ;
-
-                        &:active{
-                            border:2px solid darken($color: #BCE0FD, $amount: 10) ;
-                            transition: .3s ease ;
-                        }
-                    }
-                }
-            }
-            .btn-container{
-                width: 100%;
-                height: 5vh;
-                @include flexCenter;
-                margin-top: 3em;
-                // background-color: green;
-                button{
-                    border: none;
-                    outline: none;
-                    background: none;
-                    width: 130px;
-                    height: 40px;
-                    text-transform: uppercase;
-                    cursor: pointer;
-                    background-color: lighten($color: $primary-color, $amount: 10);
-                    margin-left: 35px;
-                    border-radius: 5px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-        
-                    a{
-                        font-size: 16px;
-                        color: white;
-                        text-decoration: none;
-        
-                        i{
-                            padding-right: 5px;
-                            font-size: 18px;
-                            color: $secondary-color;
-                        }
-                    }
-    
-                    &:hover{
-                        background-color: lighten($color: $primary-color, $amount: 10);
-                        transition: .3s ease;
-                        transform: scale(99%);
-                    }
-    
-                    &:active{
-                        background-color: lighten($color: $primary-color, $amount: 20);
-                        transition: .3s ease;
-                        transform: scale(98%);
-                    }
-                }
-            }
-        }
-    }
 }
 
 //About 
@@ -485,7 +354,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(../images/banner.PNG) rgba(0,0,0,0.4) ;
+    background: url(../images/about-bg.gif) rgba(0,0,0,0.4) ;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -496,7 +365,6 @@
         position: absolute;
         // background-color: rgb(0 0 128 / 21%);
         background-image:  linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
-        
         top: 0px;
         right: 0px;
         left: 0px;
@@ -573,7 +441,7 @@
         .box-container{
             width: 100%;
             height: max-content;
-            background-color: #fafafa;
+            // background-color: #fafafa;
             display: flex;
             flex-wrap: wrap;
 
@@ -618,25 +486,25 @@
                     line-height: 2;
                 }
                 &:nth-child(1){
-                    background-image:url(../images/attendant.svg);
+                    background-image:url(../images/attendant-gif.gif);
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
                 }
                 &:nth-child(2){
-                    background-image:url(../images/monitor.svg);
+                    background-image:url(../images/monitor-gif.gif);
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
                 }
                 &:nth-child(3){
-                    background-image:url(../images/track.svg);
+                    background-image:url(../images/track-wellbeing.gif);
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;
                 }
                 &:nth-child(4){
-                    background-image:url(../images/celeberate.svg);
+                    background-image:url(../images/celeberate-gif.gif);
                     background-repeat: no-repeat;
                     background-size: contain;
                     background-position: center;

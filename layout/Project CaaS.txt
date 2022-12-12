@@ -1,0 +1,42 @@
+PROJECT CaaS DASHBOARD
+
+1. Parish Profile
+		Parish Logo,
+		Name,
+		Address,
+		Phone Number
+		Total number of members
+		
+
+2. Attendance	
+		Previous attendance
+			Gender - (Men/Women),
+			Status - (Members, Workers, Minister )
+			First Timers
+		
+		
+		Attendance/Absence Rate (in percentage of total members)
+		
+		graph of weekly/monthly attendance across a calendar year
+		
+		Take Attendance (Real time attendance)
+		
+3. Members
+		Create, Read, Update and Delete Members
+		Upcoming birthday of members in the month
+		
+			
+
+4. Analytics
+		Missed Service Report
+			Last Sunday
+			Last 2 Sunday
+			Last 3 Sunday
+			Last 5 Sunday
+		
+		Attendance Report
+		
+
+
+
+		
