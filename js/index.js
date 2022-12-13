@@ -59,22 +59,21 @@ hamburger.addEventListener("click", function() {
 //   return;
 // })
 
-// function signIn() {
-//   document.documentElement.scrollTop = 0;
-//   modalSignInForm.style.display = 'flex'
-//   document.getElementById('usernmae').focus()
-//   console.log(usernameField);
-// }
+function signIn() {
+  document.documentElement.scrollTop = 0;
+  // when i click the sign up toggle back the HAMBURGER MENU AND THE NAV
+  hamburger.classList.toggle("is-active");
+  mobileListedItems.classList.toggle('toggle-nav')
+}
 
 
 // // mobile sign up modal
-// function signIn2() {
-//   document.documentElement.scrollTop = 0;
-//   modalSignInForm.style.display = 'flex'
-//   // when i click the sign up toggle back the HAMBURGER MENU AND THE NAV
-//   hamburger.classList.toggle("is-active");
-//   mobileListedItems.classList.toggle('toggle-nav')
-// }
+function signIn2() {
+  document.documentElement.scrollTop = 0;
+  // when i click the sign up toggle back the HAMBURGER MENU AND THE NAV
+  hamburger.classList.toggle("is-active");
+  mobileListedItems.classList.toggle('toggle-nav')
+}
 // // --------- end for the modal
 
 // reachus

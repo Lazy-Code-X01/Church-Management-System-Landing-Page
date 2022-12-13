@@ -71,34 +71,29 @@ html {
   bottom: -10px;
 }
 
-.hamburger--elastic-r .hamburger-inner {
-  top: 2px;
-  transition-duration: 0.275s;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+.hamburger--3dx .hamburger-box {
+  perspective: 80px;
 }
 
-.hamburger--elastic-r .hamburger-inner::before {
-  top: 10px;
+.hamburger--3dx .hamburger-inner {
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.hamburger--elastic-r .hamburger-inner::after {
-  top: 20px;
-  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+.hamburger--3dx .hamburger-inner::before, .hamburger--3dx .hamburger-inner::after {
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.hamburger--elastic-r.is-active .hamburger-inner {
-  transform: translate3d(0, 10px, 0) rotate(-135deg);
-  transition-delay: 0.075s;
+.hamburger--3dx.is-active .hamburger-inner {
+  background-color: transparent !important;
+  transform: rotateY(180deg);
 }
 
-.hamburger--elastic-r.is-active .hamburger-inner::before {
-  transition-delay: 0s;
-  opacity: 0;
+.hamburger--3dx.is-active .hamburger-inner::before {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
 }
 
-.hamburger--elastic-r.is-active .hamburger-inner::after {
-  transform: translate3d(0, -20px, 0) rotate(270deg);
-  transition-delay: 0.075s;
+.hamburger--3dx.is-active .hamburger-inner::after {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
 }
 
 .nav, .mobile-nav {
@@ -377,7 +372,7 @@ html {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../images/about-bg.gif) rgba(0, 0, 0, 0.4);
+  background: url(../images/tourists-go-up-hill-sunrise.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -561,7 +556,7 @@ html {
   margin-top: 4em;
 }
 .reach-us .sub-reach-us .form__map__holder {
-  width: 60%;
+  width: 80%;
   height: max-content;
   margin: 4em auto;
   display: flex;
