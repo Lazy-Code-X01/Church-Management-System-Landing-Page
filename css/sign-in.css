@@ -63,6 +63,7 @@ body {
   margin-bottom: 4rem;
   font-size: 30px;
   font-weight: 700;
+  cursor: pointer;
   color: #000080;
 }
 .sign__up__form__container .sub-sign__up__form__container .form .logo i {

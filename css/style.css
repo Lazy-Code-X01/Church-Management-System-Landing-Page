@@ -354,6 +354,12 @@ html {
   margin: 1rem 0px;
   text-transform: capitalize;
 }
+@media screen and (max-width: 425px) {
+  .home-banner-container .sub-home-banner-container .banner-text p .mnf {
+    color: green;
+    display: none;
+  }
+}
 .home-banner-container .sub-home-banner-container .banner-text .btn-holder button {
   border: none;
   outline: none;

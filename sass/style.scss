@@ -322,6 +322,12 @@
                 // @media screen and (max-width: 425px) {
                 //     display: none;
                 // }
+                .mnf{
+                    @media screen and (max-width: 425px) {
+                        color: green;
+                        display: none;
+                    }
+                }
             }
 
             .btn-holder{

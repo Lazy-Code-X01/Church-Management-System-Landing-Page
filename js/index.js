@@ -45,16 +45,12 @@ hamburger.addEventListener("click", function() {
 
 // ------------ for the nodal
 
-// Get the window width
-// function changeText() {
-//   if (window.innerWidth > 425) {
-  
-//     // If less than 768
-//     document.querySelector('.mll1').innerText = 'track every member wellbeing';
-//     // Change the link text to View.
-//   }
-// }
-// changeText();
+window.onresize = () => {
+  // if (window.innerWidth == 425) {
+  //   // console.log('Reduce Text Size');
+  // }
+  console.log('Hello');
+}
 
 function signIn() {
   document.documentElement.scrollTop = 0;
