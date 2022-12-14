@@ -29,6 +29,16 @@
 
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!--email js-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("dTukSFnS65nVipcns");
+      })();
+    </script>
+    <!--end of email js-->
 </head>
 <body>
 
@@ -135,7 +145,7 @@
           tracking every member
           wellbeing 
         </h1>
-        <p>
+        <p class="info">
           Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, <small class="mnf"> Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat.</small> 
         </p>
 
@@ -199,47 +209,42 @@
   </div>
 </section>
 
-<!-- Pricing Section-->
-<!-- <section class="pricing-section scroll-reveal" id="pricing">
-  <div class="sub-pricing-section">
-    <h1>PENDING .... </h1>
-  </div>
-</section> -->
-
 <!--reach us-->
 <section class="reach-us scroll-reveal" id="reach-us">
   <div class="sub-reach-us">
     <h1>REACH US</h1>
+    <p class="alert"></p>
     <div class="form__map__holder">
       <!-- contact form-->
       <form class="form">
         <div class="form-H">
           <label for="FULL NAME">FULL NAME</label> <br>
-          <input type="text">
+          <input type="text" id="name" >
         </div>
 
         <!--PHONE NUMBER-->
         <div class="form-H">
           <label for="FULL NAME">PHONE NUMBER</label> <br>
-          <input type="NUMBER">
+          <input type="NUMBER" id="phone" >
         </div>
 
         <!--EMAIL-->
         <div class="form-H">
           <label for="FULL NAME">EMAIL</label> <br>
-          <input type="email">
+          <input type="email" id="email" >
         </div>
 
         <!--MESSAGE-->
         <div class="form-H">
           <label for="FULL NAME">MESSAGE</label> <br>
           <!-- <input type="email"> -->
-          <textarea name="" id=""></textarea>
+          <textarea name="" id="message"></textarea>
         </div>
 
         <div class="btn-container">
-          <button type="submit">
-            <a href="#">
+          <!--remeber to put the onclick back-->
+          <button type="submit" id="reach-us-btn">
+              <a>
               <i class='bx bx-world'></i>
               REACH US
             </a>
@@ -320,5 +325,6 @@
 <script src="./js/index.js"></script>
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="./js/email.js"></script>
 </body>
 </html>

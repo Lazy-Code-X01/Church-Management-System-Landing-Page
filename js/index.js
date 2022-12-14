@@ -85,10 +85,13 @@ function reachUs() {
 // });
 
 
-ScrollReveal().reveal('.mll1', { delay: 1000 });
-ScrollReveal().reveal('.btn', { delay: 2000 });
+ScrollReveal().reveal('.mll1', { delay: 700 });
+ScrollReveal().reveal('.info', { delay: 800 });
+ScrollReveal().reveal('.btn', { delay: 900 });
+
 ScrollReveal().reveal('.text1', { delay: 1000 });
 ScrollReveal().reveal('.text2', { delay: 1000 });
+
 ScrollReveal().reveal('.box', { delay: 1000 });
 ScrollReveal().reveal('.reach-us', { delay: 1000 });
 ScrollReveal().reveal('.pricing-section', { delay: 1000 });
@@ -115,7 +118,6 @@ scrollBtn.addEventListener("click", () => {
       behavior: "smooth"
   });
 });
-
 // end
 
 
