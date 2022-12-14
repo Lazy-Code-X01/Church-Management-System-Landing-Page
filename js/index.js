@@ -44,20 +44,17 @@ hamburger.addEventListener("click", function() {
 
 
 // ------------ for the nodal
-// const modalSignInForm = document.querySelector('#sign-in')
-// const usernameField = document.getElementById('usernmae')
 
-// function closeModal() {
-//   modalSignInForm.style.display = 'none'
-// }
-
-// // when window scroll past 450px hide the sign up
-// window.addEventListener('scroll', function () {
-//   if (window.scrollY > 450) {
-//     closeModal()
+// Get the window width
+// function changeText() {
+//   if (window.innerWidth > 425) {
+  
+//     // If less than 768
+//     document.querySelector('.mll1').innerText = 'track every member wellbeing';
+//     // Change the link text to View.
 //   }
-//   return;
-// })
+// }
+// changeText();
 
 function signIn() {
   document.documentElement.scrollTop = 0;
@@ -81,6 +78,8 @@ function reachUs() {
   hamburger.classList.toggle("is-active");
   mobileListedItems.classList.toggle('toggle-nav')
 }
+
+
 
 
 //scroll reveal js implementation

@@ -16,7 +16,7 @@
     width: 90%;
   }
   .home-banner-container .sub-home-banner-container .banner-text .mll1 {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 1.5;
   }
   .home-banner-container .sub-home-banner-container .banner-text .m110 {
@@ -25,23 +25,26 @@
   .home-banner-container .sub-home-banner-container .banner-text .btn-holder button {
     width: 130px;
   }
-  .home-banner-container .sub-home-banner-container .sign__up__form__container-overlay .sub-sign__up__form__container {
-    width: 70%;
-  }
-  .home-banner-container .features-section .sub-features-section .box-container .box {
+  .features-section .sub-features-section .box-container .box {
     margin-left: 1.8em;
     width: calc(20% + 1em);
   }
-  .home-banner-container .reach-us .sub-reach-us .form__map__holder {
+  .reach-us .sub-reach-us .form__map__holder {
     width: 80%;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav {
     display: none;
   }
   .mobile {
     display: flex;
+  }
+  .home-banner-container .sub-home-banner-container {
+    top: 100px;
+  }
+  .home-banner-container .sub-home-banner-container .banner-img img {
+    display: none;
   }
   .about-us-banner .sub-about-us-container h1 {
     text-align: center;
@@ -109,5 +112,20 @@
   }
   .reach-us .sub-reach-us .form__map__holder .form .form-H textarea {
     width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .home-banner-container .sub-home-banner-container .banner-text {
+    justify-content: unset;
+  }
+  .home-banner-container .sub-home-banner-container .banner-text .mll1 {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .home-banner-container .sub-home-banner-container .banner-text .m110 {
+    font-size: 15px;
+  }
+  .home-banner-container .sub-home-banner-container .banner-text p {
+    font-size: 15px;
   }
 }

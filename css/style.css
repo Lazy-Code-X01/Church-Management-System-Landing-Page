@@ -288,32 +288,46 @@ html {
 
 .home-banner-container {
   position: relative;
-  width: 100%;
   height: 100vh;
+  padding: 4rem 6rem;
+}
+@media screen and (max-width: 425px) {
+  .home-banner-container {
+    padding: 0;
+  }
 }
 .home-banner-container .sub-home-banner-container {
-  width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   position: absolute;
   top: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .home-banner-container .sub-home-banner-container .banner-img img {
   height: auto;
   max-width: 100%;
+  display: block;
+  vertical-align: middle;
 }
 .home-banner-container .sub-home-banner-container .banner-text {
-  margin-left: 30px;
-  width: 60%;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 1;
   align-items: flex-start;
 }
 .home-banner-container .sub-home-banner-container .banner-text .ml10 {
   color: #000080;
   font-weight: 700;
   font-size: 23px;
+  line-height: 30px;
+}
+@media screen and (max-width: 425px) {
+  .home-banner-container .sub-home-banner-container .banner-text .ml10 {
+    font-size: 15px;
+  }
 }
 .home-banner-container .sub-home-banner-container .banner-text .ml10 .letter {
   display: inline-block;
@@ -322,19 +336,23 @@ html {
 }
 .home-banner-container .sub-home-banner-container .banner-text .mll1 {
   margin: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
   text-transform: uppercase;
-  line-height: 1.5;
-  font-size: 40px;
+  line-height: 56px;
+  font-size: 45px;
   color: #000080;
+}
+@media screen and (max-width: 425px) {
+  .home-banner-container .sub-home-banner-container .banner-text .mll1 {
+    font-size: 25px;
+  }
 }
 .home-banner-container .sub-home-banner-container .banner-text p {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 28px;
-  margin: 2rem 0px;
+  margin: 1rem 0px;
+  text-transform: capitalize;
 }
 .home-banner-container .sub-home-banner-container .banner-text .btn-holder button {
   border: none;
@@ -656,6 +674,33 @@ html {
   to {
     top: 0;
     opacity: 1;
+  }
+}
+.cloud {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 10rem;
+  background-size: 250rem 18rem;
+  background: url(../images/cloud.png) repeat-x;
+  animation: cloud 10s linear infinite;
+}
+
+.cloud-1 {
+  opacity: 0.5;
+  height: 15rem;
+  background-size: 250rem 20rem;
+  animation-direction: reverse;
+  animation-duration: 15s;
+}
+
+@keyframes cloud {
+  0% {
+    background-position-x: 0rem;
+  }
+  100% {
+    background-position-x: -250rem;
   }
 }
 .footer-section {
