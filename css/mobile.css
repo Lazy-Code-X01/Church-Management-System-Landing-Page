@@ -41,9 +41,9 @@
     display: flex;
   }
   .home-banner-container .sub-home-banner-container {
-    top: 100px;
+    top: 120px;
   }
-  .home-banner-container .sub-home-banner-container .banner-img img {
+  .home-banner-container .sub-home-banner-container .banner-img {
     display: none;
   }
   .about-us-banner .sub-about-us-container h1 {

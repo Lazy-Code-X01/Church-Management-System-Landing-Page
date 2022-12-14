@@ -318,21 +318,21 @@ html {
   flex: 1 1;
   align-items: flex-start;
 }
-.home-banner-container .sub-home-banner-container .banner-text .ml10 {
+.home-banner-container .sub-home-banner-container .banner-text .ml12 {
   color: #000080;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 30px;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 425px) {
-  .home-banner-container .sub-home-banner-container .banner-text .ml10 {
+  .home-banner-container .sub-home-banner-container .banner-text .ml12 {
     font-size: 15px;
   }
 }
-.home-banner-container .sub-home-banner-container .banner-text .ml10 .letter {
+.home-banner-container .sub-home-banner-container .banner-text .ml12 .letter {
   display: inline-block;
   line-height: 1em;
-  transform-origin: 0 0;
 }
 .home-banner-container .sub-home-banner-container .banner-text .mll1 {
   margin: 0;
@@ -681,7 +681,7 @@ html {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 10rem;
+  height: 5px;
   background-size: 250rem 18rem;
   background: url(../images/cloud.png) repeat-x;
   animation: cloud 10s linear infinite;
@@ -689,7 +689,7 @@ html {
 
 .cloud-1 {
   opacity: 0.5;
-  height: 15rem;
+  height: 7px;
   background-size: 250rem 20rem;
   animation-direction: reverse;
   animation-duration: 15s;
