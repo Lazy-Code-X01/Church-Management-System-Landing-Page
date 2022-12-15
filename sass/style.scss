@@ -24,6 +24,7 @@
         padding-left: 25px;
         display: flex;
         align-items: center;
+        cursor: pointer;
         // background-color: green;
     }
 
@@ -134,6 +135,7 @@
     }
     .mobile-nav__logo{
         @extend .nav__logo;
+
     }
 
     .hamburger{
@@ -173,6 +175,7 @@
         .nav__menu{
             width: 100%;
             height: max-content;
+            @include flexCenter;
             // background-color: greenyellow;
 
             ul{
@@ -182,7 +185,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    margin-bottom: 1rem;
+                    margin-bottom: 16px;
                     a{
                         color: $white;
                         font-size: 16px;
@@ -211,12 +214,11 @@
                 height: 48px;
                 cursor: pointer;
                 // background-color: lighten($color: $primary-color, $amount: 10);
-                margin-left: 35px;
                 border-radius: 5px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-bottom: 1rem;
+                margin-bottom: 16px;
                 padding: 10px;
 
                 a{
@@ -241,139 +243,76 @@
 }
 
 // Home banner section
-.home-banner-container{
-    // display: none;
-    position: relative;
-    // width: 100%;
-    height: 100vh;
-    padding: 4rem 6rem;
-    // @include flexCenter;
-    @media screen and (max-width: 425px) {
-        padding: 0;
-    }
-    .sub-home-banner-container{
-        // width: 100%;
-        min-height: 100vh;
-        position: absolute;
-        top: 80px;
-        // background-color: green;
-        @include flexCenter;
-        
-        .banner-img{
-            
-            img{
-                height: auto;
-                max-width: 100%;
-                display: block;
-                vertical-align: middle;
-            }
-        }
-
-        .banner-text{
-            // margin-left: 30px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            flex: 1 1;
-            align-items: flex-start;
-
-            .ml12 {
-                // text-transform: capitalize;
-                color: $primary-color;
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 30px;
-                margin-bottom: 1rem;
-
-                @media screen and (max-width: 425px) {
-                    font-size: 15px;
-                }
-                .letter{
-                    display: inline-block;
-                    line-height: 1em;
-                }
-              }
-              
-
-            .mll1{
-                margin: 0;
-                // margin-left: 10px;
-                // margin-top: 30px;
-                // margin-bottom: 30px;
-                text-transform: uppercase;
-                line-height: 56px;
-                font-size: 45px;
-                color: $primary-color;
-                // font-weight: lighter;
-                @media screen and (max-width: 425px) {
-                    font-size: 25px;
-                }
-            }
-
-            p{
-                
-                font-size: 16px;
-                font-weight: 400;
-                letter-spacing: .04em;
-                line-height: 28px;
-                margin: 1rem 0px;
-                text-transform: capitalize;
-                // @media screen and (max-width: 425px) {
-                //     display: none;
-                // }
-                .mnf{
-                    @media screen and (max-width: 425px) {
-                        color: green;
-                        display: none;
-                    }
-                }
-            }
-
-            .btn-holder{
-                // margin-left: 10px;
-                button{
-                    animation: identifier 3s ease-in-out infinite;
-                    transition: all 0.5s ease-in-out;
-                    border: none;
-                    outline: none;
-                    background: none;
-                    width: 148px;
-                    height: 48px;
-                    cursor: pointer;
-                    background: transparent;
-                    border-radius: 5px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid $primary-color;
-                    background-color: lighten($color: $primary-color, $amount: 10);
-                    // background-color: $secondary-color;
-                    a{
-                        font-size: 16px;
-                        color: $white;
-                        text-decoration: none;
-                        text-transform: capitalize;
-                    }
-
-                    &:hover{
-                        background-color: lighten($color: $primary-color, $amount: 10);
-                        transition: .3s ease;
-                        transform: scale(99%);
-                    }
-    
-                    &:active{
-                        background-color: lighten($color: $primary-color, $amount: 20);
-                        transition: .3s ease;
-                        transform: scale(98%);
-                    }
-                }
-            }
-        }
-    }
-
-
+#home{
+    min-height: 100vh;
+    padding:0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
 }
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(../images/home-bg-img-2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .image {
+        img{
+            width: 40vw;
+            // width: 711px;
+            // height: 800px;
+            animation: float 3s linear infinite;
+        }
+    }
+
+    .content{
+        h3{
+            font-size: 5.5rem;
+            color:#333;
+            text-transform: uppercase;
+            line-height: 1.5;
+
+            span{
+                color: $primary-color;
+                text-transform: uppercase;
+            }
+        }
+        p{
+            font-size: 1.7rem;
+            color:#666;
+            padding:1rem 0;
+            line-height: 1.5;
+        }
+        .btn{
+            border: none;
+            outline: none;
+            background: none;
+            width: 148px;
+            height: 48px;
+            cursor: pointer;
+            background-color: lighten($color: $primary-color, $amount: 10);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 1.7rem;
+            color:#fff;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+            transition: all .3s linear;
+            animation: grow 3s linear infinite;
+
+            &:hover{
+                transform: translateY(-.3rem);
+                box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+            }
+        }
+    }
+}
+
 
 //About 
 .about-us-banner{
@@ -401,19 +340,19 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        padding-top: 5em;
+        padding-top: 80px;
 
         h1{
             font-size: 24px;
             color: $primary-color;
             text-transform: uppercase;
-            margin-left: 1em;
-            margin-bottom: 1em;
+            margin-left: 30px;
+            margin-bottom: 16px;
         }
 
         .text1{
             width: 40%;
-            margin-left: 1em;
+            margin-left: 30px;
             p{
                 font-size: 16px;
                 line-height: 2;
@@ -426,7 +365,7 @@
         .text2{
             width: 40%;
             position: absolute;
-            right: 2%;
+            right: 4%;
             bottom: 12%;
 
             p{
@@ -447,7 +386,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    padding-top: 1em;
+    padding-top: 16px;
 
 
     .sub-features-section{
@@ -461,8 +400,8 @@
             font-size: 24px;
             color: $primary-color;
             text-transform: uppercase;
-            margin-top: 1em;
-            margin-bottom: 2em;
+            margin-top: 16px;
+            margin-bottom: 32px;
         }
 
         .box-container{
@@ -475,11 +414,11 @@
             .box{
                 position: relative;
                 // margin: auto;
-                margin-left: 2em;
+                margin-left: 32px;
                 margin-bottom: 55px;
                 margin-top: 55px;
-                width: calc(20% + 2em) ;
-                height: 20em;
+                width: calc(20% + 32px) ;
+                height: 320px;
                 background-color: #F1F9FF;
                 @include flexCenter;
                 line-height: 1.3;
@@ -541,30 +480,11 @@
     }
 }
 
-//Pricing 
-.pricing-section{
-    // display: none;
-    width: 100%;
-    height: 100vh;
-    background-color: #F1F9FF;
-    margin-bottom: 4em;
-    .sub-pricing-section{
-        width: 100%;
-        height: 100%;
-        @include flexCenter;
-        h1{
-            color: #BCE0FD;
-            font-size: 2em;
-            text-align: center;
-        }
-    }
-}
-
 
 // Reach Us
 .reach-us{
     width: 100%;
-    height: 100vh;
+    height: max-content;
     // background-color: #fff;
     // position: relative;
     @include flexCenter;
@@ -573,26 +493,26 @@
         width: 100%;
         height: max-content;
         // background-color: #bababa;
-        margin-top: 8em;
+        margin-top: 60px;
 
         h1{
             font-size: 24px;
             color: $primary-color;
             text-align: center;
-            margin-top: 4em;
+            margin-top: 40px;
         }
             /*----------------------------------alert styling area ---------------------*/
         .alert {
             // margin-bottom: 1rem;
             width: 90%;
             @include marginCenter; 
-            height: 1.25rem;
+            height: 20px;
             display: grid;
             align-items: center;
             text-align: center;
-            font-size: 1rem;
-            border-radius: 0.25rem;
-            letter-spacing: 0.25rem;
+            font-size: 16px;
+            border-radius: 4px;
+            letter-spacing: 4px;
             text-transform: capitalize;
         }
         .alert-danger {
@@ -605,9 +525,9 @@
         }
 
         .form__map__holder{
-            width: 80%;
+            width: 70%;
             height: max-content;
-            margin: 4em  auto;
+            margin: 64px  auto;
             // background-color: gray;
             @include flexCenter;
             justify-content: space-between;
@@ -659,7 +579,8 @@
                     }
                 }
                 .btn-container{
-                    margin-top: 1em;
+                    margin-top: 16px;
+
                     button{
                         border: none;
                         outline: none;
@@ -722,45 +643,28 @@
     to {top: 0; opacity: 1}
 }
 
-@keyframes identifier {
+// Add Animation to grow and shrink button
+@keyframes grow {
     0% {
-        transform: translateX(0);
+        transform: scale(1);
     }
     50% {
-        transform: scale(90%);
+        transform: scale(1.1);
     }
     100% {
-        transform: translateX(0);
+        transform: scale(1);
     }
 }
 
-
-.cloud{
-    position: absolute;
-    bottom: 0; right: 0; left: 0;
-    height: 5px;
-    background-size: 250rem 18rem;
-    background:url(../images/cloud.png) repeat-x;
-    animation: cloud 10s linear infinite;
-}
-
-.cloud-1{
-    opacity: .5;
-    height: 7px;
-    background-size: 250rem 20rem;
-    animation-direction: reverse;
-    animation-duration: 15s;
-}
-
-@keyframes cloud{
-    0%{
-        background-position-x: 0rem;
+// for backgrund image
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
     }
-    100%{
-        background-position-x: -250rem;
+    50%{
+        transform: translateY(-3.5rem);
     }
 }
-
 
 @import './footer';
 @import './_scrolltoTop';

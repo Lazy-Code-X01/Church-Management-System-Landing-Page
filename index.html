@@ -20,9 +20,6 @@
     
     <!--for mobile navigations-->
     <link rel="stylesheet" href="./css/mobile.css">
-
-    <!--linking anime js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     
     <!--scroll reveal js-->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -94,7 +91,7 @@
 <div class="nav" id="nav">
     <div class="nav__logo">
       <i class="fab fa-slack"></i> &nbsp;
-      <p class="logo">CaaS</p>
+      <p class="logo2">CaaS</p>
     </div>
     <div class="sub-nav">
       <div class="nav__content">  
@@ -116,7 +113,7 @@
             </a>
           </button>
     
-          <button>
+          <button onclick="reachUs2()">
             <a href="#reach-us" class="--reach-out">
               <i class='bx bx-world'></i>
               Reach Us
@@ -128,16 +125,27 @@
 
 
 <!-- first section banner Home Page and singn up modal -->
-<section class="home-banner-container scroll-reveal" id="home">
+<section class="home" id="home">
+  <div class="content">
+      <h3>unlock tracking <span>possibilities</span></h3>
+      <p>If a man has a hundred Sheep, and one of them goes astray, deos he not leave the ninety-nine and go in search of One.. <b>YOU DON'T HAVE TO LOOSE ONE</b> </p>
+      <a href="./Get_Started_Form/form.html" class="btn">Get started</a>
+  </div>
+
+    <div class="image">
+      <img src="images/home-img2.png" alt="">
+      <!-- <img src="images/unlock.svg" alt=""> -->
+    </div>
+
+</section>
+<!-- <section class="home-banner-container scroll-reveal" id="home">
   <div class="sub-home-banner-container">
     <div class="banner-text">
-      <!--small annimated text using anime js cdn-->
       <small class="ml12">
         <span class="text-wrapper">
           <span class="letters">You don't have to loose one</span>
         </span>
-      </small> 
-      <!-- end of small animated text using anime js cdn-->
+      </small>
         
         <h1 class="mll1">
           unlock the  
@@ -164,7 +172,7 @@
   </div>
   <div class="cloud cloud-1"></div>
   <div class="cloud cloud-2"></div>
-</section>
+</section> -->
 
 <!--about section banner ABOUT US-->
 <section class="about-us-banner scroll-reveal" id="about-us">

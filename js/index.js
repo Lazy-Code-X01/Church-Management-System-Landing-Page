@@ -43,22 +43,14 @@ hamburger.addEventListener("click", function() {
 });
 
 
-// ------------ for the nodal
-
-window.onresize = () => {
-  // if (window.innerWidth == 425) {
-  //   // console.log('Reduce Text Size');
-  // }
-  console.log('Hello');
-}
-
 function signIn() {
   document.documentElement.scrollTop = 0;
   // when i click the sign up toggle back the HAMBURGER MENU AND THE NAV
   hamburger.classList.toggle("is-active");
   mobileListedItems.classList.toggle('toggle-nav')
-}
 
+  location.href = './Sign_In_Form/sign-in.html'
+}
 
 // // mobile sign up modal
 function signIn2() {
@@ -66,6 +58,8 @@ function signIn2() {
   // when i click the sign up toggle back the HAMBURGER MENU AND THE NAV
   hamburger.classList.toggle("is-active");
   mobileListedItems.classList.toggle('toggle-nav')
+
+  location.href = './Sign_In_Form/sign-in.html'
 }
 // // --------- end for the modal
 
@@ -73,9 +67,22 @@ function signIn2() {
 function reachUs() {
   hamburger.classList.toggle("is-active");
   mobileListedItems.classList.toggle('toggle-nav')
+  location.href = '#reach-us'
+}
+
+function reachUs2() {
+  location.href = '#reach-us'
 }
 
 
+const logo = document.querySelector('.logo')
+logo.addEventListener('click', () => {
+  location.href = './index.html'
+})
+const logo2 = document.querySelector('.logo2')
+logo2.addEventListener('click', () => {
+  location.href = './index.html'
+})
 
 
 //scroll reveal js implementation
@@ -84,10 +91,7 @@ function reachUs() {
 //   reset: true
 // });
 
-
-ScrollReveal().reveal('.mll1', { delay: 700 });
-ScrollReveal().reveal('.info', { delay: 800 });
-ScrollReveal().reveal('.btn', { delay: 900 });
+ScrollReveal().reveal('.content', { delay: 700 });
 
 ScrollReveal().reveal('.text1', { delay: 1000 });
 ScrollReveal().reveal('.text2', { delay: 1000 });
@@ -119,26 +123,3 @@ scrollBtn.addEventListener("click", () => {
   });
 });
 // end
-
-
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml12');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml12 .letter',
-    translateX: [40,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 500 + 30 * i
-  }).add({
-    targets: '.ml12 .letter',
-    translateX: [0,-30],
-    opacity: [1,0],
-    easing: "easeInExpo",
-    duration: 1100,
-    delay: (el, i) => 100 + 30 * i
-  });

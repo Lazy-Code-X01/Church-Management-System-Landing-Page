@@ -35,34 +35,6 @@
         }
     }    
 
-    // home section
-    .home-banner-container {
-
-        .sub-home-banner-container{
-            flex-direction: column;
-            .banner-img{
-                // width: 500px;
-            }
-            .banner-text{
-                width: 90%;
-                // margin-left: 3em;
-                .mll1{
-                    font-size: 35px;
-                    line-height: 1.5;
-                }
-                .m110{
-                    font-size: 18px;
-                }
-                .btn-holder{
-                    
-                    button{
-                        width: 130px;
-                    }
-                }
-            }
-         }
-    }   
-
     //features
     .features-section{
         .sub-features-section{
@@ -96,18 +68,6 @@
         display: flex;
     }
 
-    // home section
-    .home-banner-container{
-        .sub-home-banner-container{
-            top: 120px;
-
-            .banner-img{
-                display: none;
-                img{
-                }
-            }
-        }
-    }
 
     // about us 
     .about-us-banner{
@@ -132,7 +92,7 @@
                 width: 100%;
                 right: 0;
                 @include flexCenter;
-                // bottom: 0;
+                bottom: 0;
                 p{
                     text-align: center;
                     width: 90%;
@@ -193,23 +153,31 @@
     }
 }
 
+//for the HOME Section
+@media (max-width:991px){
+    
+    #home{
+        padding:0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
 
-@media screen and (max-width: 425px) {
-    .home-banner-container{
-        .sub-home-banner-container{
-            .banner-text{
-                justify-content: unset;
-                .mll1{
-                    font-size: 25px;
-                    line-height: 1.5;
-                }
-                .m110{
-                    font-size: 15px;
-                }
-                p{
-                    font-size: 15px;
-                }
-            }
-        }
+}
+
+@media (max-width:768px){
+    .home{
+        flex-flow: column-reverse;
+    }
+
+    .home .image img{
+        width:100%;
+    }
+
+    .home .content h3{
+        font-size: 3.6rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
     }
 }

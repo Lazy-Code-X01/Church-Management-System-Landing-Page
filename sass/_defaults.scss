@@ -1,16 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
 @import './color';
 @import './utilities.scss';
 
-body{
-    padding: 0;
-    margin: 0;
+*{
+    margin:0; padding:0;
     box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+}
+
+
+body{
+    // padding: 0;
+    // margin: 0;
+    // box-sizing: border-box;
     // font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-family: 'Karla', sans-serif;
-    // width: 100%;
+    background:#f9f9f9;
 }
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 62.5%;
 }
 
