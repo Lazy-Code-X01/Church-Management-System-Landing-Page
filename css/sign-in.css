@@ -84,7 +84,7 @@ body {
 @media screen and (max-width: 425px) {
   .sign__up__form__container .sub-sign__up__form__container .form .logo {
     font-size: 25px;
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
   }
 }
 .sign__up__form__container .sub-sign__up__form__container .form h1 {
