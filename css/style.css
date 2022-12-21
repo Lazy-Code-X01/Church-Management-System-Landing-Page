@@ -363,12 +363,15 @@ html {
 .about-us-banner {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: url(../images/about-carton.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about-us-banner::before {
   content: "";
@@ -380,10 +383,7 @@ html {
   bottom: 0px;
 }
 .about-us-banner .sub-about-us-container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  padding-top: 80px;
+  z-index: 1;
 }
 .about-us-banner .sub-about-us-container h1 {
   font-size: 24px;
@@ -391,30 +391,59 @@ html {
   text-transform: uppercase;
   margin-left: 30px;
   margin-bottom: 16px;
+  text-align: center;
 }
-.about-us-banner .sub-about-us-container .text1 {
-  width: 40%;
-  margin-left: 30px;
+.about-us-banner .sub-about-us-container .content {
+  padding: 0 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.about-us-banner .sub-about-us-container .text1 p {
+.about-us-banner .sub-about-us-container .content .image {
+  width: 45vw;
+}
+.about-us-banner .sub-about-us-container .content .image img {
+  width: 100%;
+}
+.about-us-banner .sub-about-us-container .content .text {
+  width: 60%;
+}
+.about-us-banner .sub-about-us-container .content .text h3 {
+  font-size: 25px;
+  color: #333;
+  line-height: 1.5;
+}
+.about-us-banner .sub-about-us-container .content .text p {
   font-size: 16px;
-  line-height: 2;
-  text-align: justify;
-  color: #000080;
-  color: black;
+  color: #333;
+  padding: 16px 0;
+  line-height: 1.5;
+  text-align: left;
 }
-.about-us-banner .sub-about-us-container .text2 {
-  width: 40%;
-  position: absolute;
-  right: 4%;
-  bottom: 12%;
+.about-us-banner .sub-about-us-container .content button {
+  border: none;
+  outline: none;
+  background: none;
+  width: 148px;
+  height: 48px;
+  cursor: pointer;
+  background-color: #0000b3;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  animation: grow 3s linear infinite;
 }
-.about-us-banner .sub-about-us-container .text2 p {
-  font-size: 16px;
-  line-height: 2;
-  text-align: justify;
-  color: #000080;
-  color: black;
+.about-us-banner .sub-about-us-container .content button a {
+  color: #fff;
+}
+.about-us-banner .sub-about-us-container .content button:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .features-section {
@@ -484,6 +513,7 @@ html {
   text-align: center;
   z-index: 2;
   line-height: 2;
+  color: #666;
 }
 .features-section .sub-features-section .box-container .box:nth-child(1) {
   background-image: url(../images/attendant-gif.gif);

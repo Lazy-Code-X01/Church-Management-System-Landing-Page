@@ -9,6 +9,9 @@
     width: 130px;
     margin-left: 20px;
   }
+  .about-us-banner .sub-about-us-container .content {
+    padding: 0;
+  }
   .features-section .sub-features-section .box-container .box {
     margin-left: 1.8em;
     width: calc(20% + 1em);
@@ -24,36 +27,31 @@
   .mobile {
     display: flex;
   }
+  .about-us-banner .sub-about-us-container {
+    padding: 0;
+  }
   .about-us-banner .sub-about-us-container h1 {
-    text-align: center;
-    margin: 0;
+    margin-top: 80px;
   }
-  .about-us-banner .sub-about-us-container .text1 {
+  .about-us-banner .sub-about-us-container .content {
+    flex-direction: column;
+  }
+  .about-us-banner .sub-about-us-container .content .image {
     width: 100%;
-    margin-left: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 4em;
   }
-  .about-us-banner .sub-about-us-container .text1 p {
-    text-align: center;
-    width: 90%;
-    font-size: 15px;
-    line-height: 1.8;
+  .about-us-banner .sub-about-us-container .content .text {
+    width: 80%;
+    margin-bottom: 80px;
   }
-  .about-us-banner .sub-about-us-container .text2 {
-    width: 100%;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
+  .about-us-banner .sub-about-us-container .content .text h3 {
+    font-size: 20px;
   }
-  .about-us-banner .sub-about-us-container .text2 p {
-    text-align: center;
-    width: 90%;
-    font-size: 15px;
-    line-height: 1.8;
+  .about-us-banner .sub-about-us-container .content .text p {
+    font-size: 16px;
+  }
+  .about-us-banner .sub-about-us-container .content button {
+    width: 130px;
   }
   .features-section {
     height: max-content;
