@@ -322,7 +322,7 @@ html {
 }
 .home .content h3 {
   font-size: 5.5rem;
-  color: #333;
+  color: #737373;
   text-transform: uppercase;
   line-height: 1.5;
 }
@@ -332,7 +332,7 @@ html {
 }
 .home .content p {
   font-size: 1.7rem;
-  color: #666;
+  color: #808080;
   padding: 1rem 0;
   line-height: 1.5;
 }
@@ -410,12 +410,13 @@ html {
 }
 .about-us-banner .sub-about-us-container .content .text h3 {
   font-size: 25px;
-  color: #333;
+  color: #737373;
+  font-weight: 700;
   line-height: 1.5;
 }
 .about-us-banner .sub-about-us-container .content .text p {
   font-size: 16px;
-  color: #333;
+  color: #808080;
   padding: 16px 0;
   line-height: 1.5;
   text-align: left;
@@ -513,7 +514,7 @@ html {
   text-align: center;
   z-index: 2;
   line-height: 2;
-  color: #666;
+  color: #808080;
 }
 .features-section .sub-features-section .box-container .box:nth-child(1) {
   background-image: url(../images/attendant-gif.gif);
@@ -613,6 +614,7 @@ html {
   height: 40px;
   width: 320px;
   border-radius: 5px;
+  color: #737373;
   text-transform: capitalize;
   text-indent: 10px;
 }
