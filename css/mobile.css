@@ -1,3 +1,7 @@
+@font-face {
+  font-family: IkFont;
+  src: url(../fonts/ikfont.otf);
+}
 @media screen and (max-width: 1024px) {
   .nav .sub-nav .nav__content .nav__menu ul {
     padding: 10px;

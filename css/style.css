@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@font-face {
+  font-family: IkFont;
+  src: url(../fonts/ikfont.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +26,10 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: IkFont;
+  src: url(../fonts/ikfont.otf);
+}
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -106,6 +114,10 @@ html {
 
 .hamburger--3dx.is-active .hamburger-inner::after {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
+}
+
+* {
+  font-family: IkFont;
 }
 
 .nav, .mobile-nav {
