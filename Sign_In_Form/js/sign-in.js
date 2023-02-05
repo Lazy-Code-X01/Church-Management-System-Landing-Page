@@ -9,5 +9,5 @@ const form = document.querySelector('.form')
 
 form.onsubmit = (e) => {
     e.preventDefault()
-    location.href='https://chms2-dashboard.netlify.app/'
+    location.href='https://chms3-dashboard.netlify.app/'
 }
