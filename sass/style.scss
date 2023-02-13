@@ -9,6 +9,22 @@
     // font-family: IkFont;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 2px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(212, 212, 212);
+    border-radius: 5px;
+  }
+
 .nav{
     width: 100%;
     height: 70px;
@@ -260,7 +276,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background:url(../images/home-bg-img-2.png) no-repeat;
+    // background:url(../images/home-bg-img-2.png) no-repeat;
+    background:url(../images/test_home_banner.png) no-repeat;
     background-size: cover;
     background-position: center;
 
