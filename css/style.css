@@ -116,6 +116,10 @@ html {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
 }
 
+* {
+  font-family: IkFont;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
