@@ -81,8 +81,9 @@ function logSubmit(event) {
         ms.style.border = '1px solid #FAFA33'
     }else{
         //send email
-        sendMail()
-        displayAlert('Message Sent', 'success')
+        // sendMail()
+        
+        displayAlert('Just lol', 'success')
 
         //put border colors back
         fn.style.border = '2px solid #BCE0FD'
